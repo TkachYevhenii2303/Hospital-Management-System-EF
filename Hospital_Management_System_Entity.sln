@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital_Management_System_API", "Hospital_Management_System_API\Hospital_Management_System_API.csproj", "{4B840A95-4764-4265-8B8B-38DBC81B6DCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital_Management_System_DAL", "Hospital_Management_System_DAL\Hospital_Management_System_DAL.csproj", "{F794CE3C-0ADE-45BC-B42F-D8705526E105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital_Management_System_BLL", "Hospital_Management_System_BLL\Hospital_Management_System_BLL.csproj", "{05DD899A-3AFC-4EBD-BE2B-841CC46AE9E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital_Management_System_MIG", "Hospital_Management_System_Mig\Hospital_Management_System_MIG.csproj", "{8513CB81-ACD7-440B-A9EA-A18CBA883F84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hospital_Management_System_Management", "Hospital_Management_System_Management", "{932F9D85-C567-40EA-B0B2-EA098F8EDD8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B840A95-4764-4265-8B8B-38DBC81B6DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B840A95-4764-4265-8B8B-38DBC81B6DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B840A95-4764-4265-8B8B-38DBC81B6DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B840A95-4764-4265-8B8B-38DBC81B6DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F794CE3C-0ADE-45BC-B42F-D8705526E105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F794CE3C-0ADE-45BC-B42F-D8705526E105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F794CE3C-0ADE-45BC-B42F-D8705526E105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F794CE3C-0ADE-45BC-B42F-D8705526E105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DD899A-3AFC-4EBD-BE2B-841CC46AE9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DD899A-3AFC-4EBD-BE2B-841CC46AE9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DD899A-3AFC-4EBD-BE2B-841CC46AE9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DD899A-3AFC-4EBD-BE2B-841CC46AE9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8513CB81-ACD7-440B-A9EA-A18CBA883F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8513CB81-ACD7-440B-A9EA-A18CBA883F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8513CB81-ACD7-440B-A9EA-A18CBA883F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8513CB81-ACD7-440B-A9EA-A18CBA883F84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B840A95-4764-4265-8B8B-38DBC81B6DCE} = {932F9D85-C567-40EA-B0B2-EA098F8EDD8C}
+		{F794CE3C-0ADE-45BC-B42F-D8705526E105} = {932F9D85-C567-40EA-B0B2-EA098F8EDD8C}
+		{05DD899A-3AFC-4EBD-BE2B-841CC46AE9E9} = {932F9D85-C567-40EA-B0B2-EA098F8EDD8C}
+		{8513CB81-ACD7-440B-A9EA-A18CBA883F84} = {932F9D85-C567-40EA-B0B2-EA098F8EDD8C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B241CA3-69FD-4166-BEEE-1E86F7BD59E1}
+	EndGlobalSection
+EndGlobal
