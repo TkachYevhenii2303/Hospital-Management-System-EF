@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<HospitalContext>(configurations =>
 {
     configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-        options => options.MigrationsAssembly("Hospital_Management_System_Mig"));
+        options => options.MigrationsAssembly("Hospital_Management_System_MIG"));
 });
 
 var app = builder.Build();

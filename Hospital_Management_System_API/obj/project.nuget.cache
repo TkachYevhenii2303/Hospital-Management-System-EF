@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WZuDSO6gfqUBP/81HcYkflVl/vHWC0SEnxXsDT8u7IDJ+XqEvOjPZDWxPtbcR8cgTf+/Nj/VJ2Em35Bl/GACQA==",
+  "dgSpecHash": "TT+ajP5RuIWU4z60k1XRGWDS271gDBWNquRcBumNwUBSBMRJ96ypzmhaet45hlauWJYlRyH1ATJuU4MXki4g/g==",
   "success": true,
   "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Hospital_Management_System_Entity\\Hospital_Management_System_API\\Hospital_Management_System_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

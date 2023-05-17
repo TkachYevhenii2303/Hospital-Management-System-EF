@@ -9,7 +9,7 @@ namespace Hospital_Management_System_DAL.Entities
 {
     public class AppointmentsStatus : BaseEntity
     {
-        public AppointmentsStatusTypesEnum StatusTitle { get; set; } = AppointmentsStatusTypesEnum.None;
+        public string StatusTitle { get; set; } = string.Empty; 
 
         public ICollection<StatusHistories> StatusHistories { get; set; } = null!;
     }

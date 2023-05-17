@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eh9g9FvCnTW19yJYY5nw32/Dj5bW6G56rAx/TWT4zxjPmHeDm5kLO+VqbuiJXzqPJTZe80FwXKWzp7hqD5u5PQ==",
+  "dgSpecHash": "QshD824B7UmI/FObY9+AW5ckheutFId1ilSM1AuHcJsj4V3a9bAyoyT4bC5HWJ11bqUyTmHF0lXDwGYZLWoBDg==",
   "success": true,
   "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Hospital_Management_System_Entity\\Hospital_Management_System_DAL\\Hospital_Management_System_DAL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",

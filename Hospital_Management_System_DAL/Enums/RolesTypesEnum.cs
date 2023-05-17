@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Enums
 {
-    public enum RolesTitleEnum
+    public enum RolesTypesEnum
     {
         Dermatologist = 0,
 
@@ -17,7 +17,5 @@ namespace Hospital_Management_System_DAL.Enums
         Ophthalmology = 3,
 
         Dermatology = 4,
-
-        Neurology = 5
     }
 }

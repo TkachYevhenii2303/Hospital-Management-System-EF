@@ -9,7 +9,7 @@ namespace Hospital_Management_System_DAL.Entities
 {
     public class Roles : BaseEntity
     {
-        public RolesTitleEnum RolesTitle { get; set; } = RolesTitleEnum.Dermatologist;
+        public string RolesTitle { get; set; } = string.Empty;
 
         public ICollection<HasRoles> HasRoles { get; set; } = null!;
     }

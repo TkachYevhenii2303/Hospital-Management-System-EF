@@ -9,7 +9,7 @@ namespace Hospital_Management_System_DAL.Entities
 {
     public class DocumentsTypes : BaseEntity
     {
-        public DocumentsTypesEnum TypesTitle { get; set; } = DocumentsTypesEnum.None;
+        public string TypesTitle { get; set; } = string.Empty;
 
         public ICollection<Documents> Documents { get; set; } = null!;
     }

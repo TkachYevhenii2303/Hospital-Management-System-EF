@@ -13,3 +13,5 @@ D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_Mig\obj\Debug\net6.0\refint\Hospital_Management_System_Mig.dll
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_Mig\obj\Debug\net6.0\Hospital_Management_System_Mig.pdb
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_Mig\obj\Debug\net6.0\ref\Hospital_Management_System_Mig.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_Mig\bin\Debug\net6.0\Hospital_Management_System_Mig.runtimeconfig.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_Mig\obj\Debug\net6.0\Hospital_Management_System_Mig.genruntimeconfig.cache
