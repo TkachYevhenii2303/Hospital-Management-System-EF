@@ -9,6 +9,8 @@ using Hospital_Management_System_DAL.Entities;
 using Hospital_Management_System_DAL.Generic_Repository_Pattern.Interfaces;
 using Hospital_Management_System_DAL.Wrapper_Response;
 using Microsoft.EntityFrameworkCore;
+using Hospital_Management_System_DAL.Specification_Pattern.Interfaces;
+using Hospital_Management_System_DAL.Specification_Pattern;
 
 namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
 {
@@ -113,6 +115,11 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
             }
 
             return resultResponse;
+        }
+
+        public IEnumerable<TEntity> FindWithSpecificationPattern(ISpecification<TEntity>? specification = null)
+        {
+            return SpecificationEvaluator<TEntity>.GetQuery(_context.Set<TEntity>().AsQueryable(), specification);
         }
     }
 }

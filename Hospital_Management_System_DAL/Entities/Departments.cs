@@ -10,10 +10,10 @@ namespace Hospital_Management_System_DAL.Entities
     {
         public string DepartmentTitle { get; set; } = string.Empty;
 
-        public Hospital Hospital { get; set; } = null!;
+        public Hospitals Hospital { get; set; } = null!;
 
         public Guid HospitalId { get; set; }
 
-        public ICollection<InDepartment> InDepartments { get; set; } = null!;
+        public ICollection<InDepartments> InDepartments { get; set; } = null!;
     }
 }

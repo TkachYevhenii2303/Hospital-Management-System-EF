@@ -22,6 +22,6 @@ namespace Hospital_Management_System_DAL.Entities
 
         public ICollection<HasRoles> HasRoles { get; set; } = null!;    
 
-        public ICollection<InDepartment> InDepartments { get; set; } = null!;
+        public ICollection<InDepartments> InDepartments { get; set; } = null!;
     }
 }

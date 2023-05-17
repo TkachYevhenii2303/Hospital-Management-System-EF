@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Configurations
 {
-    internal class HospitalConfigurations : IEntityTypeConfiguration<Hospital>
+    internal class HospitalConfigurations : IEntityTypeConfiguration<Hospitals>
     {
-        public void Configure(EntityTypeBuilder<Hospital> builder)
+        public void Configure(EntityTypeBuilder<Hospitals> builder)
         {
             builder
                 .HasMany(x => x.Departments)

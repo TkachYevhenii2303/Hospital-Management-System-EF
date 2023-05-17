@@ -58,7 +58,7 @@ namespace Hospital_Management_System_MIG.Migrations
                     b.ToTable("Appointments");
                 });
 
-            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.AppointmentsStatus", b =>
+            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.AppointmentsStatuses", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -75,7 +75,7 @@ namespace Hospital_Management_System_MIG.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("AppointmentsStatus");
+                    b.ToTable("AppointmentsStatuses");
                 });
 
             modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Departments", b =>
@@ -245,7 +245,7 @@ namespace Hospital_Management_System_MIG.Migrations
                     b.ToTable("HasRoles");
                 });
 
-            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Hospital", b =>
+            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Hospitals", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
@@ -271,7 +271,7 @@ namespace Hospital_Management_System_MIG.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Hospital");
+                    b.ToTable("Hospitals");
                 });
 
             modelBuilder.Entity("Hospital_Management_System_DAL.Entities.InDepartment", b =>
@@ -474,13 +474,13 @@ namespace Hospital_Management_System_MIG.Migrations
 
             modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Departments", b =>
                 {
-                    b.HasOne("Hospital_Management_System_DAL.Entities.Hospital", "Hospital")
+                    b.HasOne("Hospital_Management_System_DAL.Entities.Hospitals", "Hospitals")
                         .WithMany("Departments")
                         .HasForeignKey("HospitalId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Hospital");
+                    b.Navigation("Hospitals");
                 });
 
             modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Documents", b =>
@@ -579,7 +579,7 @@ namespace Hospital_Management_System_MIG.Migrations
 
             modelBuilder.Entity("Hospital_Management_System_DAL.Entities.StatusHistories", b =>
                 {
-                    b.HasOne("Hospital_Management_System_DAL.Entities.AppointmentsStatus", "AppointmentsStatus")
+                    b.HasOne("Hospital_Management_System_DAL.Entities.AppointmentsStatuses", "AppointmentsStatuses")
                         .WithMany("StatusHistories")
                         .HasForeignKey("AppointmentStatusId")
                         .IsRequired();
@@ -591,7 +591,7 @@ namespace Hospital_Management_System_MIG.Migrations
 
                     b.Navigation("Appointments");
 
-                    b.Navigation("AppointmentsStatus");
+                    b.Navigation("AppointmentsStatuses");
                 });
 
             modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Appointments", b =>
@@ -601,7 +601,7 @@ namespace Hospital_Management_System_MIG.Migrations
                     b.Navigation("StatusHistories");
                 });
 
-            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.AppointmentsStatus", b =>
+            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.AppointmentsStatuses", b =>
                 {
                     b.Navigation("StatusHistories");
                 });
@@ -623,7 +623,7 @@ namespace Hospital_Management_System_MIG.Migrations
                     b.Navigation("InDepartments");
                 });
 
-            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Hospital", b =>
+            modelBuilder.Entity("Hospital_Management_System_DAL.Entities.Hospitals", b =>
                 {
                     b.Navigation("Departments");
                 });

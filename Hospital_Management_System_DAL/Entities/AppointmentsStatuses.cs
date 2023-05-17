@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Entities
 {
-    public class AppointmentsStatus : BaseEntity
+    public class AppointmentsStatuses : BaseEntity
     {
         public string StatusTitle { get; set; } = string.Empty; 
 

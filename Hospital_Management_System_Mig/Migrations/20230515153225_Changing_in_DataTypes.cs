@@ -28,7 +28,7 @@ namespace Hospital_Management_System_MIG.Migrations
 
             migrationBuilder.AlterColumn<string>(
                 name: "StatusTitle",
-                table: "AppointmentsStatus",
+                table: "AppointmentsStatuses",
                 type: "nvarchar(max)",
                 nullable: false,
                 oldClrType: typeof(int),
@@ -56,7 +56,7 @@ namespace Hospital_Management_System_MIG.Migrations
 
             migrationBuilder.AlterColumn<int>(
                 name: "StatusTitle",
-                table: "AppointmentsStatus",
+                table: "AppointmentsStatuses",
                 type: "int",
                 nullable: false,
                 oldClrType: typeof(string),

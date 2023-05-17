@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Entities
 {
-    public class Hospital : BaseEntity
+    public class Hospitals : BaseEntity
     {
         public string HospitalTitle { get; set; } = string.Empty;
 

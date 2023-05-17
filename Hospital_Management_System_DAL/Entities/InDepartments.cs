@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Entities
 {
-    public class InDepartment : BaseEntity
+    public class InDepartments : BaseEntity
     {
         public DateTime TimeFrom { get; set; }
 

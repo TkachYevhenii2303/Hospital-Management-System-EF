@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Configurations
 {
-    internal class InDepartmentsConfigurations : IEntityTypeConfiguration<InDepartment>
+    internal class InDepartmentsConfigurations : IEntityTypeConfiguration<InDepartments>
     {
-        public void Configure(EntityTypeBuilder<InDepartment> builder)
+        public void Configure(EntityTypeBuilder<InDepartments> builder)
         {
             builder
                 .HasMany(x => x.Documents)

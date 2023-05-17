@@ -12,7 +12,7 @@ namespace Hospital_Management_System_MIG.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AppointmentsStatus",
+                name: "AppointmentsStatuses",
                 columns: table => new
                 {
                     ID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -59,7 +59,7 @@ namespace Hospital_Management_System_MIG.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Hospital",
+                name: "Hospitals",
                 columns: table => new
                 {
                     ID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -121,7 +121,7 @@ namespace Hospital_Management_System_MIG.Migrations
                     table.ForeignKey(
                         name: "FK_Departments_Hospital_HospitalId",
                         column: x => x.HospitalId,
-                        principalTable: "Hospital",
+                        principalTable: "Hospitals",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -316,7 +316,7 @@ namespace Hospital_Management_System_MIG.Migrations
                     table.ForeignKey(
                         name: "FK_StatusHistories_AppointmentsStatus_AppointmentStatusId",
                         column: x => x.AppointmentStatusId,
-                        principalTable: "AppointmentsStatus",
+                        principalTable: "AppointmentsStatuses",
                         principalColumn: "ID");
                     table.ForeignKey(
                         name: "FK_StatusHistories_Appointments_AppointmentsId",
@@ -428,7 +428,7 @@ namespace Hospital_Management_System_MIG.Migrations
                 name: "Roles");
 
             migrationBuilder.DropTable(
-                name: "AppointmentsStatus");
+                name: "AppointmentsStatuses");
 
             migrationBuilder.DropTable(
                 name: "Appointments");
@@ -449,7 +449,7 @@ namespace Hospital_Management_System_MIG.Migrations
                 name: "Patients");
 
             migrationBuilder.DropTable(
-                name: "Hospital");
+                name: "Hospitals");
         }
     }
 }

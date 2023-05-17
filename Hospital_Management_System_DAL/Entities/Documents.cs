@@ -26,7 +26,7 @@ namespace Hospital_Management_System_DAL.Entities
 
         public Guid PatientCaseId { get; set; }
 
-        public InDepartment InDepartment { get; set; } = null!;
+        public InDepartments InDepartment { get; set; } = null!;
 
         public Guid InDepartmentId { get; set; }
 

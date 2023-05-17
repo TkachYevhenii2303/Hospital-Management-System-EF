@@ -14,7 +14,7 @@ namespace Hospital_Management_System_DAL.Entities
 
         public Guid AppointmentsId { get; set; }
 
-        public AppointmentsStatus AppointmentsStatus { get; set; } = null!;
+        public AppointmentsStatuses AppointmentsStatus { get; set; } = null!;
 
         public Guid AppointmentStatusId { get; set; }
     }
