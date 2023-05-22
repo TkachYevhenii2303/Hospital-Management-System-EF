@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Wrapper_Response
 {
-    internal class ResultResponse<TResult>
+    public class ResultResponse<TResult>
     {
         public TResult? Result { get; set; }
 

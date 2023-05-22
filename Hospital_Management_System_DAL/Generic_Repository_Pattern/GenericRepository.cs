@@ -14,7 +14,7 @@ using Hospital_Management_System_DAL.Specification_Pattern;
 
 namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
 {
-    internal class GenericRepository<TEntity> : IGenericRepository<TEntity>
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         where TEntity : BaseEntity
     {
         private readonly HospitalContext _context;

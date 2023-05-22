@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Specification_Pattern.Interfaces
 {
-    internal interface ISpecification<TEntity>
+    public interface ISpecification<TEntity>
     {
         Expression<Func<TEntity, bool>> Criteria { get; }
 

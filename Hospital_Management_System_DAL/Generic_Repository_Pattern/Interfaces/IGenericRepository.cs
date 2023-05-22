@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Generic_Repository_Pattern.Interfaces
 {
-    internal interface IGenericRepository<TEntity> 
+    public interface IGenericRepository<TEntity> 
         where TEntity : BaseEntity
     {
         Task<ResultResponse<IEnumerable<TEntity>>> GetAllInformationsAsync();

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Repositories.Interfaces
 {
-    internal interface IEmployeesRepository : IGenericRepository<Employees>
+    public interface IEmployeesRepository : IGenericRepository<Employees>
     {
     }
 }
