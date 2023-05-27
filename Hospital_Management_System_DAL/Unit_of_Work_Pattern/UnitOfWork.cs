@@ -23,7 +23,7 @@ namespace Hospital_Management_System_DAL.Unit_of_Work_Pattern
 
         public IEmployeesRepository EmployeesRepository { get; private set; }
 
-        public async void Complete() => await _context.SaveChangesAsync(); 
+        public async Task Complete() => await _context.SaveChangesAsync(); 
 
         public void Dispose() => _context.Dispose();
     }

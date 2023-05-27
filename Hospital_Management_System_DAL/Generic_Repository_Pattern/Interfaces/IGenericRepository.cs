@@ -18,7 +18,7 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern.Interfaces
 
         Task<ResultResponse<TEntity>> InsertEntityAsync(TEntity entity);
 
-        Task<ResultResponse<TEntity>> UpdateEntityAsync(TEntity entity, Guid ID);
+        Task<ResultResponse<TEntity>> UpdateEntityAsync(TEntity entity);
 
         Task<ResultResponse<IEnumerable<TEntity>>> DeleteEntityByIdAsync(Guid ID);
 

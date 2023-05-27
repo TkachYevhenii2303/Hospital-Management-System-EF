@@ -30,7 +30,7 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
             
             resultResponse.Result = await _context.Set<TEntity>().AsNoTracking().ToListAsync();
 
-            resultResponse.Message = $"Proccess is Good! We return all information from {GetAllInformationsAsync().GetType().Name}";
+            resultResponse.Message = $"Proccess is Good! We return all information from {typeof(GenericRepository<TEntity>).FullName}";
 
             return resultResponse;
         }
@@ -41,7 +41,7 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
 
             resultResponse.Result = await _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(x => x.ID == ID);
 
-            resultResponse.Message = $"Proccess is Good! We return information from {GetEntityByIdAsync(ID).GetType().Name}";
+            resultResponse.Message = $"Proccess is Good! We return information from {typeof(GenericRepository<TEntity>).FullName}";
             
             return resultResponse;
         }
@@ -54,12 +54,14 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
 
             await _context.Set<TEntity>().AddAsync(entity);
 
-            resultResponse.Message = $"Proccess is Good! We insert information int {InsertEntityAsync(entity).GetType().Name}";
+            resultResponse.Result = entity;
+
+            resultResponse.Message = $"Proccess is Good! We insert information int {typeof(GenericRepository<TEntity>).FullName}";
 
             return resultResponse;
         }
 
-        public async Task<ResultResponse<TEntity>> UpdateEntityAsync(TEntity entity, Guid ID)
+        public async Task<ResultResponse<TEntity>> UpdateEntityAsync(TEntity entity)
         {
             var resultResponse = new ResultResponse<TEntity>();
 
@@ -69,20 +71,22 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
 
                 entity.UpdatedDateTime = DateTime.Now;
 
-                var result = await _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(x => x.ID == ID);
+                var result = await _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(x => x.ID == entity.ID);
 
                 if (result is null)
                 {
-                    throw new NullReferenceException($"The informations with {ID} ID not found!!!");
+                    throw new NullReferenceException($"The informations with {entity.ID} ID not found!!!");
                 }
 
                 _context.Set<TEntity>().Update(entity);
+
+                resultResponse.Result = entity;
             }
             catch (Exception exception)
             {
                 resultResponse.Success = false;
                 
-                resultResponse.Message = $"Operations {UpdateEntityAsync(entity, ID).GetType().Name} is not valid!";
+                resultResponse.Message = $"Operations {typeof(GenericRepository<TEntity>).FullName} is not valid!";
 
                 throw new Exception($"Somethig went wrong in Delete operation! {exception.Message}");
             }
@@ -104,12 +108,14 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
                 }
 
                 _context.Set<TEntity>().Remove(result);
+
+                resultResponse.Result = await _context.Set<TEntity>().AsNoTracking().ToListAsync();
             }
             catch (Exception exception)
             {
                 resultResponse.Success = false;
                 
-                resultResponse.Message = $"Operations {DeleteEntityByIdAsync(ID).GetType().Name} is not valid!";
+                resultResponse.Message = $"Operations {typeof(GenericRepository<TEntity>).FullName} is not valid!";
 
                 throw new Exception($"Somethig went wrong in Delete operation! {exception.Message}");
             }

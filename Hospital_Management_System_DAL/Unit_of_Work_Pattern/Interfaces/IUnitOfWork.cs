@@ -11,6 +11,6 @@ namespace Hospital_Management_System_DAL.Unit_of_Work_Pattern.Interfaces
     {
         IEmployeesRepository EmployeesRepository { get; }
 
-        void Complete();
+        Task Complete();
     }
 }

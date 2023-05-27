@@ -20,6 +20,8 @@ namespace Hospital_Management_System_API.AutoMapper
                 .ForMember(destination => destination.FullName, options => options.MapFrom(source => $"{source.FirstName} {source.LastName}"));
 
             CreateMap<InsertEmployeeDTO, Employees>();
+
+            CreateMap<UpdateEmployeeDTO, Employees>();  
         }
 
         private void ResultResponseConfigurationsMapping()

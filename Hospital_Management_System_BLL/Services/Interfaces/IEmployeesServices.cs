@@ -15,6 +15,10 @@ namespace Hospital_Management_System_BLL.Services.Interfaces
 
         Task<ResultResponse<GetEmployeesDTO>> GetEmployeeByIdAsync(Guid ID);
 
-        Task<ResultResponse<GetEmployeesDTO>> InsertEmployeeAsync(InsertEmployeeDTO employee);
+        Task<ResultResponse<GetEmployeesDTO>> InsertEmployeeAsync(InsertEmployeeDTO employeeDTO);
+
+        Task<ResultResponse<GetEmployeesDTO>> UpdateEmployeeAsync(UpdateEmployeeDTO employeeDTO);
+
+        Task<ResultResponse<IEnumerable<GetEmployeesDTO>>> DeleteEntityByIdAsync(Guid ID);
     }
 }

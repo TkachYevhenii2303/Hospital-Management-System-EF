@@ -25,6 +25,15 @@ namespace Hospital_Management_System_BLL.Services
             _mapper = mapper;
         }
 
+        public async Task<ResultResponse<IEnumerable<GetEmployeesDTO>>> DeleteEntityByIdAsync(Guid ID)
+        {
+            var employees = await _unitOfWork.EmployeesRepository.DeleteEntityByIdAsync(ID);
+
+            _unitOfWork.Complete();
+
+            return _mapper.Map<ResultResponse<IEnumerable<Employees>>, ResultResponse<IEnumerable<GetEmployeesDTO>>>(employees);
+        }
+
         public async Task<ResultResponse<IEnumerable<GetEmployeesDTO>>> GetAllEmployeesAsync()
         {
             var employees = await _unitOfWork.EmployeesRepository.GetAllInformationsAsync();
@@ -43,7 +52,16 @@ namespace Hospital_Management_System_BLL.Services
         {
             var result = await _unitOfWork.EmployeesRepository.InsertEntityAsync(_mapper.Map<Employees>(employee));
 
-            _unitOfWork.Complete();
+            await _unitOfWork.Complete();
+
+            return _mapper.Map<ResultResponse<GetEmployeesDTO>>(result);
+        }
+
+        public async Task<ResultResponse<GetEmployeesDTO>> UpdateEmployeeAsync(UpdateEmployeeDTO employeeDTO)
+        {
+            var result = await _unitOfWork.EmployeesRepository.UpdateEntityAsync(_mapper.Map<Employees>(employeeDTO));
+
+            await _unitOfWork.Complete();
 
             return _mapper.Map<ResultResponse<GetEmployeesDTO>>(result);
         }
