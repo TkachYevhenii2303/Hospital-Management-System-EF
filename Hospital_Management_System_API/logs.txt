@@ -768,3 +768,17 @@ WHERE [e].[ID] = @__ID_0
 2023-05-27 15:30:32.386 +03:00 [INF] Executed endpoint 'Hospital_Management_System_API.Controllers.EmployeesController.GetEmployeeByIdAsync (Hospital_Management_System_API)'
 2023-05-27 15:30:32.497 +03:00 [ERR] The element in a collection does not match any key in the collection!
 2023-05-27 15:30:32.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/api/employees/Return_Employee_ID/03d8c5cb-6cad-490b-b935-db17e2fac444 - - - 404 - application/json 291.7808ms
+2023-05-27 15:43:39.459 +03:00 [INF] Startring the localhost application!
+2023-05-27 15:43:41.866 +03:00 [INF] Now listening on: https://localhost:7077
+2023-05-27 15:43:41.946 +03:00 [INF] Now listening on: http://localhost:5251
+2023-05-27 15:43:41.997 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 15:43:42.006 +03:00 [INF] Hosting environment: Development
+2023-05-27 15:43:42.013 +03:00 [INF] Content root path: D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\
+2023-05-27 15:43:43.377 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - -
+2023-05-27 15:43:44.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - - - 200 - text/html;charset=utf-8 1061.4674ms
+2023-05-27 15:43:44.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - -
+2023-05-27 15:43:44.509 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 15:43:44.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 14.5387ms
+2023-05-27 15:43:44.556 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0867ms
+2023-05-27 15:43:44.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - -
+2023-05-27 15:43:44.983 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 264.6089ms

@@ -120,3 +120,5 @@ D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\FluentValidation.dll
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\Hospital_Management_System_API.xml
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\obj\Debug\net6.0\Hospital_Management_System_API.xml

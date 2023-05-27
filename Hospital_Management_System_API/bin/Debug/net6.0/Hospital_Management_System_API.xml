@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hospital_Management_System_API</name>
+    </assembly>
+    <members>
+        <member name="M:Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeesAsync">
+            <summary>
+            Retrieves all employees asynchronously.
+            </summary>
+            <returns>An ActionResult containing a ResultResponse with an IEnumerable of GetEmployeesDTO.</returns>
+        </member>
+        <member name="M:Hospital_Management_System_API.Controllers.EmployeesController.GetEmployeeByIdAsync(System.Guid)">
+            <summary>
+            Retrieves an employee asynchronously by their ID.
+            </summary>
+            <param name="ID">The ID of the employee to retrieve.</param>
+            <returns>An ActionResult containing a ResultResponse with a GetEmployeesDTO.</returns>
+        </member>
+        <member name="M:Hospital_Management_System_API.Controllers.EmployeesController.InsertEmployeeAsync(Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DTO.InsertEmployeeDTO)">
+            <summary>
+            Inserts a new employee asynchronously.
+            </summary>
+            <param name="employeeDTO">The data of the employee to insert.</param>
+            <returns>An ActionResult containing a ResultResponse with a GetEmployeesDTO representing the inserted employee.</returns>
+        </member>
+        <member name="M:Hospital_Management_System_API.Controllers.EmployeesController.UpdateEmployeeAsync(Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DTO.UpdateEmployeeDTO)">
+            <summary>
+            Updates an existing employee asynchronously.
+            </summary>
+            <param name="employeeDTO">The updated data of the employee.</param>
+            <returns>An ActionResult containing a ResultResponse with a GetEmployeesDTO representing the updated employee.</returns>
+        </member>
+        <member name="M:Hospital_Management_System_API.Controllers.EmployeesController.DeleteEmployeeByIdAsync(System.Guid)">
+            <summary>
+            Deletes an employee asynchronously by their ID.
+            </summary>
+            <param name="ID">The ID of the employee to delete.</param>
+            <returns>An ActionResult containing a ResultResponse with an IEnumerable of GetEmployeesDTO after the deletion.</returns>
+        </member>
+    </members>
+</doc>
