@@ -782,3 +782,81 @@ WHERE [e].[ID] = @__ID_0
 2023-05-27 15:43:44.556 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0867ms
 2023-05-27 15:43:44.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - -
 2023-05-27 15:43:44.983 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 264.6089ms
+2023-05-28 21:35:45.230 +03:00 [INF] Startring the localhost application!
+2023-05-28 21:35:49.242 +03:00 [INF] Now listening on: https://localhost:7077
+2023-05-28 21:35:49.249 +03:00 [INF] Now listening on: http://localhost:5251
+2023-05-28 21:35:49.258 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-28 21:35:49.260 +03:00 [INF] Hosting environment: Development
+2023-05-28 21:35:49.262 +03:00 [INF] Content root path: D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\
+2023-05-28 21:35:50.598 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - -
+2023-05-28 21:35:51.405 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - - - 200 - text/html;charset=utf-8 814.6353ms
+2023-05-28 21:35:51.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - -
+2023-05-28 21:35:51.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - -
+2023-05-28 21:35:51.517 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 17.4086ms
+2023-05-28 21:35:51.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.9708ms
+2023-05-28 21:35:51.925 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - -
+2023-05-28 21:35:52.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.1485ms
+2023-05-28 21:36:18.369 +03:00 [INF] Startring the localhost application!
+2023-05-28 21:36:20.334 +03:00 [INF] Now listening on: https://localhost:7077
+2023-05-28 21:36:20.343 +03:00 [INF] Now listening on: http://localhost:5251
+2023-05-28 21:36:20.353 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-28 21:36:20.355 +03:00 [INF] Hosting environment: Development
+2023-05-28 21:36:20.357 +03:00 [INF] Content root path: D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\
+2023-05-28 21:36:21.548 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - -
+2023-05-28 21:36:22.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - - - 200 - text/html;charset=utf-8 738.5765ms
+2023-05-28 21:36:22.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - -
+2023-05-28 21:36:22.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - -
+2023-05-28 21:36:22.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 14.2843ms
+2023-05-28 21:36:22.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.7887ms
+2023-05-28 21:36:22.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - -
+2023-05-28 21:36:22.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.9287ms
+2023-05-28 21:36:29.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/api/employees/Return_Employee_using_Pagination?PageNumber=2&PageSize=10 - -
+2023-05-28 21:36:29.736 +03:00 [INF] Executing endpoint 'Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync (Hospital_Management_System_API)'
+2023-05-28 21:36:29.804 +03:00 [INF] Route matched with {action = "GetAllEmployeeUsingPagination", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeeUsingPaginationAsync(Hospital_Management_System_DAL.Filter.PaginationFiltering) on controller Hospital_Management_System_API.Controllers.EmployeesController (Hospital_Management_System_API).
+2023-05-28 21:36:32.270 +03:00 [WRN] No store type was specified for the decimal property 'TotalCost' on entity type 'PatientsCases'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-05-28 21:36:32.887 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-05-28 21:36:32.890 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-05-28 21:36:34.053 +03:00 [INF] Executed DbCommand (128ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[ID], [e].[ActiveIs], [e].[CreatedDateTime], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Mobile], [e].[Password], [e].[UpdatedDateTime]
+FROM [Employees] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2023-05-28 21:36:34.195 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2023-05-28 21:36:34.248 +03:00 [INF] Executing OkObjectResult, writing value of type 'Hospital_Management_System_DAL.Pagination.PagedResponse`1[[System.Collections.Generic.IEnumerable`1[[Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DTO.GetEmployeesDTO, Hospital_Management_System_DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-28 21:36:34.283 +03:00 [INF] Executed action Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync (Hospital_Management_System_API) in 4471.059ms
+2023-05-28 21:36:34.288 +03:00 [INF] Executed endpoint 'Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync (Hospital_Management_System_API)'
+2023-05-28 21:36:34.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/api/employees/Return_Employee_using_Pagination?PageNumber=2&PageSize=10 - - - 200 - application/json;+charset=utf-8 4584.9732ms
+2023-05-28 22:21:20.648 +03:00 [INF] Startring the localhost application!
+2023-05-28 22:21:23.425 +03:00 [INF] Now listening on: https://localhost:7077
+2023-05-28 22:21:23.430 +03:00 [INF] Now listening on: http://localhost:5251
+2023-05-28 22:21:23.435 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-28 22:21:23.437 +03:00 [INF] Hosting environment: Development
+2023-05-28 22:21:23.439 +03:00 [INF] Content root path: D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\
+2023-05-28 22:21:24.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - -
+2023-05-28 22:21:25.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - - - 200 - text/html;charset=utf-8 779.1267ms
+2023-05-28 22:21:25.528 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - -
+2023-05-28 22:21:25.528 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - -
+2023-05-28 22:21:25.540 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 11.8668ms
+2023-05-28 22:21:25.558 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.7432ms
+2023-05-28 22:21:26.240 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - -
+2023-05-28 22:21:26.441 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 200.9111ms
+2023-05-28 22:21:32.732 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7077/api/employees/Return_Employee_using_Pagination?PageNumber=1&PageSize=10 - -
+2023-05-28 22:21:32.748 +03:00 [INF] Executing endpoint 'Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync (Hospital_Management_System_API)'
+2023-05-28 22:21:32.788 +03:00 [INF] Route matched with {action = "GetAllEmployeeUsingPagination", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeeUsingPaginationAsync(Hospital_Management_System_DAL.Filter.PaginationFiltering) on controller Hospital_Management_System_API.Controllers.EmployeesController (Hospital_Management_System_API).
+2023-05-28 22:21:34.933 +03:00 [WRN] No store type was specified for the decimal property 'TotalCost' on entity type 'PatientsCases'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-05-28 22:21:35.598 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-05-28 22:21:35.602 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-05-28 22:21:36.889 +03:00 [INF] Executed DbCommand (160ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[ID], [e].[ActiveIs], [e].[CreatedDateTime], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Mobile], [e].[Password], [e].[UpdatedDateTime]
+FROM [Employees] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-05-28 22:21:37.059 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2023-05-28 22:21:37.128 +03:00 [INF] Executing OkObjectResult, writing value of type 'Hospital_Management_System_DAL.Pagination.PagedResponse`1[[System.Collections.Generic.IEnumerable`1[[Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DTO.GetEmployeesDTO, Hospital_Management_System_DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-05-28 22:21:37.162 +03:00 [INF] Executed action Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync (Hospital_Management_System_API) in 4365.0776ms
+2023-05-28 22:21:37.165 +03:00 [INF] Executed endpoint 'Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync (Hospital_Management_System_API)'
+2023-05-28 22:21:37.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7077/api/employees/Return_Employee_using_Pagination?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 4448.6308ms

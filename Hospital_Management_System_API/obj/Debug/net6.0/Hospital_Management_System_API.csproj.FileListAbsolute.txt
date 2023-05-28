@@ -122,3 +122,6 @@ D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\Hospital_Management_System_API.xml
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\obj\Debug\net6.0\Hospital_Management_System_API.xml
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\Microsoft.Web.Administration.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\runtimes\unix\lib\netstandard1.5\System.ServiceProcess.ServiceController.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\bin\Debug\net6.0\runtimes\win\lib\netstandard1.5\System.ServiceProcess.ServiceController.dll

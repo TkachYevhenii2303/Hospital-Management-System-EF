@@ -1,5 +1,7 @@
 ﻿using Hospital_Management_System_BLL.Services.Interfaces;
+using Hospital_Management_System_DAL.Filter;
 using Hospital_Management_System_DAL.Fluent_Validation.Configurations;
+using Hospital_Management_System_DAL.Pagination.Services.Interfaces;
 using Hospital_Management_System_DAL.Wrapper_Response;
 using Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DTO;
 using Microsoft.AspNetCore.Mvc;
@@ -14,9 +16,13 @@ namespace Hospital_Management_System_API.Controllers
     {
         private readonly IEmployeesServices _employeesServices;
 
-        public EmployeesController(IEmployeesServices employeesServices)
+        private readonly IUriService _uriService;
+
+        public EmployeesController(IEmployeesServices employeesServices, IUriService uriService)
         {
             _employeesServices = employeesServices;
+
+            _uriService = uriService;
         }
 
         /// <summary>
@@ -84,6 +90,21 @@ namespace Hospital_Management_System_API.Controllers
         public async Task<ActionResult<ResultResponse<IEnumerable<GetEmployeesDTO>>>> DeleteEmployeeByIdAsync(Guid ID)
         {
             var result = await _employeesServices.DeleteEntityByIdAsync(ID);
+
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Get all Employee with Pagination feature
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns>An ActionResult containing a IActionResult with an IEnumerable of GetEmployeesDTO.</returns>
+        [HttpGet, Route("Return_Employee_using_Pagination")]
+        public async Task<IActionResult> GetAllEmployeeUsingPaginationAsync([FromQuery] PaginationFiltering filter)
+        {
+            var route = Request.Path.Value;
+
+            var result = await _employeesServices.GetAllEmployeeUsingPaginationAsync(filter, _uriService, route);   
 
             return Ok(result);
         }

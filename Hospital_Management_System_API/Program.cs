@@ -6,6 +6,7 @@ using Hospital_Management_System_DAL.Generic_Repository_Pattern;
 using Hospital_Management_System_DAL.Generic_Repository_Pattern.Interfaces;
 using Hospital_Management_System_DAL.Unit_of_Work_Pattern;
 using Hospital_Management_System_DAL.Unit_of_Work_Pattern.Interfaces;
+using Hospital_Management_System_DAL.Pagination.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -46,6 +47,8 @@ try
         configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
             options => options.MigrationsAssembly("Hospital_Management_System_MIG"));
     });
+
+    builder.Services.SetUriConfigurations();
 
     builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 

@@ -6,6 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Hospital_Management_System_DAL.Pagination;
+using Microsoft.AspNetCore.Mvc;
+using Hospital_Management_System_DAL.Filter;
+using Hospital_Management_System_DAL.Pagination.Services.Interfaces;
 
 namespace Hospital_Management_System_BLL.Services.Interfaces
 {
@@ -20,5 +24,7 @@ namespace Hospital_Management_System_BLL.Services.Interfaces
         Task<ResultResponse<GetEmployeesDTO>> UpdateEmployeeAsync(UpdateEmployeeDTO employeeDTO);
 
         Task<ResultResponse<IEnumerable<GetEmployeesDTO>>> DeleteEntityByIdAsync(Guid ID);
+
+        Task<PagedResponse<IEnumerable<GetEmployeesDTO>>> GetAllEmployeeUsingPaginationAsync([FromQuery] PaginationFiltering filter, IUriService uriService, string route);
     }
 }
