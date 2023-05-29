@@ -38,5 +38,12 @@
             <param name="ID">The ID of the employee to delete.</param>
             <returns>An ActionResult containing a ResultResponse with an IEnumerable of GetEmployeesDTO after the deletion.</returns>
         </member>
+        <member name="M:Hospital_Management_System_API.Controllers.EmployeesController.GetAllEmployeeUsingPaginationAsync(Hospital_Management_System_DAL.Filter.PaginationFiltering)">
+            <summary>
+            Get all Employee with Pagination feature
+            </summary>
+            <param name="filter"></param>
+            <returns>An ActionResult containing a IActionResult with an IEnumerable of GetEmployeesDTO.</returns>
+        </member>
     </members>
 </doc>

@@ -12,6 +12,6 @@ build_property.RootNamespace = Hospital_Management_System_API
 build_property.ProjectDir = D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_API
 build_property._RazorSourceGeneratorDebug = 

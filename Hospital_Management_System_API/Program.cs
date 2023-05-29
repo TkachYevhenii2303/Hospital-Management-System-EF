@@ -28,7 +28,9 @@ try
     builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
     builder.Services.AddControllers();
+
     builder.Services.AddEndpointsApiExplorer();
+
     builder.Services.AddSwaggerGen(options =>
     {
         options.SwaggerDoc("v1", new OpenApiInfo()
@@ -61,8 +63,11 @@ try
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
+
         app.UseSwaggerUI();
     }
+
+    app.UseRouting();
 
     app.ConfigureExceptionHandler();
 
@@ -71,7 +76,7 @@ try
     app.UseAuthorization();
 
     app.MapControllers();
-
+    
     app.Run();
 }
 catch (Exception exception)
