@@ -1,4 +1,37 @@
 ﻿@page
 @model Hospital_Management_System_Pages.Pages.Hospital.Employee.InsertModel
 @{
+    ViewData["Title"] = "Insert new Employee";
 }
+
+<div>
+    <div>
+        <h1>Insert new Employee</h1>
+        <p><a href="./Main">Back to List of Employee</a></p>
+    </div>
+
+    <form method="post">
+        <p>
+            <label>First title</label>
+            <input type="text" name="FirstName" />
+        </p>
+        <p>
+            <label>Last title</label>
+            <input type="text" name="LastName" />
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" name="Email" />
+        </p>
+        <p>
+            <label>Mobile</label>
+            <input type="text" name="Mobile" />
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="Password" />
+        </p>
+
+        <input type="submit" value="Submit" />
+    </form>
+</div>

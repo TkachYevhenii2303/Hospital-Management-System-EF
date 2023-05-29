@@ -1,5 +1,6 @@
 ﻿using Hospital_Management_System_DAL.Bogus;
 using Hospital_Management_System_DAL.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Context
 {
-    public class HospitalContext : DbContext
+    public class HospitalContext : IdentityDbContext<User>
     {
-        public HospitalContext(DbContextOptions<HospitalContext> options) : base(options) { }
+        public HospitalContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<Employees> Employees { get; set; } 
+        public DbSet<Employees> Employees { get; set; }
 
         public DbSet<Roles> Roles { get; set; }
 
@@ -44,9 +45,11 @@ namespace Hospital_Management_System_DAL.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            var Seeding = new BogusSeeding();
+          /*  var Seeding = new BogusSeeding();
 
             modelBuilder.Entity<Employees>().HasData(Seeding.Employees);
 
@@ -72,7 +75,7 @@ namespace Hospital_Management_System_DAL.Context
 
             modelBuilder.Entity<DocumentsTypes>().HasData(Seeding.DocumentsTypes);
 
-            modelBuilder.Entity<Documents>().HasData(Seeding.Documents);
+            modelBuilder.Entity<Documents>().HasData(Seeding.Documents);*/
         }
     }
 }
