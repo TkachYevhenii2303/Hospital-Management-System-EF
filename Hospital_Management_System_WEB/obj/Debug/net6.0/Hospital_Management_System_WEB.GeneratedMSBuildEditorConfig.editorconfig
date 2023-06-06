@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Hospital_Management_System_Entity\Hospital_Management_System_WEB
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Education - Programming and Books/Learning ASP.NET Core/ASP.NET Core Lessons/Hospital_Management_System_Entity/Hospital_Management_System_WEB/Pages/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education - Programming and Books/Learning ASP.NET Core/ASP.NET Core Lessons/Hospital_Management_System_Entity/Hospital_Management_System_WEB/Pages/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education - Programming and Books/Learning ASP.NET Core/ASP.NET Core Lessons/Hospital_Management_System_Entity/Hospital_Management_System_WEB/Pages/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Education - Programming and Books/Learning ASP.NET Core/ASP.NET Core Lessons/Hospital_Management_System_Entity/Hospital_Management_System_WEB/Pages/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Education - Programming and Books/Learning ASP.NET Core/ASP.NET Core Lessons/Hospital_Management_System_Entity/Hospital_Management_System_WEB/Pages/Employee/Employee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

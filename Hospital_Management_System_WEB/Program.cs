@@ -1,4 +1,4 @@
-using Hospital_Management_System_BLL.Services;
+﻿using Hospital_Management_System_BLL.Services;
 using Hospital_Management_System_BLL.Services.Interfaces;
 using Hospital_Management_System_DAL.Generic_Repository_Pattern.Interfaces;
 using Hospital_Management_System_DAL.Generic_Repository_Pattern;
@@ -6,6 +6,7 @@ using Hospital_Management_System_DAL.Unit_of_Work_Pattern.Interfaces;
 using Hospital_Management_System_DAL.Unit_of_Work_Pattern;
 using Hospital_Management_System_DAL.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Hospital_Management_System_WEB
 {
@@ -19,7 +20,7 @@ namespace Hospital_Management_System_WEB
 
             builder.Services.AddRazorPages();
 
-            builder.Services.AddDbContext<HospitalContext>(configurations =>
+            builder.Services.AddDbContext<HospitalManagementContext>(configurations =>
             {
                 configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });

@@ -21,9 +21,9 @@ namespace Hospital_Management_System_DAL.Repositories
 {
     internal class EmployeesRepository : GenericRepository<Employees>, IEmployeesRepository
     {
-        private readonly HospitalContext _context;
+        private readonly HospitalManagementContext _context;
 
-        public EmployeesRepository(HospitalContext context) : base(context)
+        public EmployeesRepository(HospitalManagementContext context) : base(context)
         {
             _context = context;
         }

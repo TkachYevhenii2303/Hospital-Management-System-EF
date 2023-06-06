@@ -14,7 +14,7 @@ namespace Hospital_Management_System_DAL.Entities
 
         public bool ActiveIs { get; set; } = true;
 
-        public Employees Employees { get; set; } = null!;
+        public Employees Employees { get; set; } = default!;
 
         public Guid EmployeesId { get; set; }
 

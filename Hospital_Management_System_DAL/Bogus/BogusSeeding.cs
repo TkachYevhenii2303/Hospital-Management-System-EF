@@ -19,7 +19,7 @@ namespace Hospital_Management_System_DAL.Bogus
 
         public IReadOnlyCollection<Employees> Employees { get; set; } = new List<Employees>();
       
-        public IReadOnlyCollection<Roles> Roles { get; set; } = new List<Roles>();
+        public IReadOnlyCollection<Positions> Positions { get; set; } = new List<Positions>();
         
         public IReadOnlyCollection<HasRoles> HasRoles { get; set; } = new List<HasRoles>();
 
@@ -89,9 +89,9 @@ namespace Hospital_Management_System_DAL.Bogus
         {
             Employees = SeedingEmployees();
 
-            Roles = SeedingRoles();
+            Positions = SeedingPositions();
             
-            HasRoles = SeedingHasRoles(Employees, Roles);
+            HasRoles = SeedingHasRoles(Employees, Positions);
             
             Hospitals = SeedingHospitals();
 
@@ -130,9 +130,9 @@ namespace Hospital_Management_System_DAL.Bogus
             return employees;
         }
 
-        private static IReadOnlyCollection<Roles> SeedingRoles()
+        private static IReadOnlyCollection<Positions> SeedingPositions()
         {
-            var roles = new Faker<Roles>().Generate(ROLES);
+            var roles = new Faker<Positions>().Generate(ROLES);
 
             var rolesTypes = Enum.GetNames(typeof(RolesTypesEnum));
 
@@ -141,7 +141,7 @@ namespace Hospital_Management_System_DAL.Bogus
             return roles;
         }
 
-        private static IReadOnlyCollection<HasRoles> SeedingHasRoles(IEnumerable<Employees> employees, IEnumerable<Roles> roles)
+        private static IReadOnlyCollection<HasRoles> SeedingHasRoles(IEnumerable<Employees> employees, IEnumerable<Positions> roles)
         {
             var hasRoles = new Faker<HasRoles>()
                 .RuleFor(x => x.RolesId, f => f.PickRandom(roles).ID)

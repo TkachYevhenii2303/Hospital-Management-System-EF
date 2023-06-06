@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XlTBclsrHQqvVv26PdOeINxmtQp1Z/5CZQP4ANOmgqYnw440sdPYiRwXAfxtUgPBAlCaKivl5osCvpNk1Yu87Q==",
+  "dgSpecHash": "WZZBhov8mavM3ETH3OdpV1x/GNzIrfsFnnr+eb3EvHlJXkvUYwOozrQgXpF2twN0fwZbZCsOhgrJiffw0ZINmg==",
   "success": true,
   "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Hospital_Management_System_Entity\\Hospital_Management_System_DTO\\Hospital_Management_System_DTO.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

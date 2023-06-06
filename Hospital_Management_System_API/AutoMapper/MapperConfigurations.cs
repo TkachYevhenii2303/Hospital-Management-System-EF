@@ -24,7 +24,9 @@ namespace Hospital_Management_System_API.AutoMapper
 
             CreateMap<InsertEmployeeDTO, Employees>();
 
-            CreateMap<UpdateEmployeeDTO, Employees>();  
+            CreateMap<UpdateEmployeeDTO, Employees>();
+
+            CreateMap<UpdateEmployeeDTO, GetEmployeesDTO>().ReverseMap();
         }
 
         private void ResultResponseConfigurationsMapping()

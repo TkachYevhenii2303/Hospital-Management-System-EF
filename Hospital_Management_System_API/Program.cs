@@ -44,7 +44,7 @@ try
         options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
     });
 
-    builder.Services.AddDbContext<HospitalContext>(configurations =>
+    builder.Services.AddDbContext<HospitalManagementContext>(configurations =>
     {
         configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
             options => options.MigrationsAssembly("Hospital_Management_System_MIG"));
@@ -79,7 +79,7 @@ try
     
     app.Run();
 }
-catch (Exception exception)
+catch (Exception exception) when (exception is not HostAbortedException)
 {
     Log.Fatal(exception.Message, "Host terminated unexpectedly!!!");
 }

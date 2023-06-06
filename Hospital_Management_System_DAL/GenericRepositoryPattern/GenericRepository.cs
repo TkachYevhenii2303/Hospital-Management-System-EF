@@ -17,9 +17,9 @@ namespace Hospital_Management_System_DAL.Generic_Repository_Pattern
     public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         where TEntity : BaseEntity
     {
-        private readonly HospitalContext _context;
+        private readonly HospitalManagementContext _context;
 
-        public GenericRepository(HospitalContext context)
+        public GenericRepository(HospitalManagementContext context)
         {
             _context = context;
         }

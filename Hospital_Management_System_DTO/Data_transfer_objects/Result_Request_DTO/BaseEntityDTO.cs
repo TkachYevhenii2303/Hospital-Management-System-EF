@@ -9,5 +9,9 @@ namespace Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DT
     public abstract class BaseEntityDTO
     {
         public Guid ID { get; set; }
+
+        public DateTime CreatedDateTime { get; set; }
+
+        public DateTime? UpdatedDateTime { get; set; }
     }
 }

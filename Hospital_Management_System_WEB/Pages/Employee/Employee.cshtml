@@ -1,7 +1,7 @@
 ﻿@page
 @model EmployeeModel
 @{
-    ViewData["Title"] = "Hospital's Employee";
+    ViewData["Title"] = "Employee";
 }
 
 <style>
@@ -44,6 +44,10 @@
 
 <h1>Employee Page</h1>
 
+<p>
+    <a asp-page="Create">Insert new Employee</a>
+</p>
+
 @if (Model.EmployeesDTOs?.Success is true)
 {
     <table class="table-style">
@@ -65,9 +69,11 @@
                     <td>@employee.Email</td>
                     <td>@employee.Mobile</td>
                     <td>
-                        <a href="#" class="edit-link">Update</a>
-                        <a href="#" class="delete-link">Delete</a>
+                        <a asp-page="./Edit" asp-route-id="@employee.ID" class="btn btn-primary">Update</a>
+                        <a asp-page="./Details" asp-route-id="@employee.ID" class="btn btn-info">Details</a>
+                        <a asp-page="./Delete" asp-route-id="@employee.ID" class="btn btn-danger">Delete</a>
                     </td>
+
                 </tr>
             }
         </tbody>

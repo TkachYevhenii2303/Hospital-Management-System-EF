@@ -12,9 +12,9 @@ namespace Hospital_Management_System_DAL.Unit_of_Work_Pattern
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly HospitalContext _context;
+        private readonly HospitalManagementContext _context;
 
-        public UnitOfWork(HospitalContext context)
+        public UnitOfWork(HospitalManagementContext context)
         {
             _context = context;
 
