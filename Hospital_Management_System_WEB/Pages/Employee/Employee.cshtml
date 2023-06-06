@@ -1,0 +1,79 @@
+﻿@page
+@model EmployeeModel
+@{
+    ViewData["Title"] = "Hospital's Employee";
+}
+
+<style>
+    .table-style {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table-style th,
+        .table-style td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .table-style th {
+            background-color: #f2f2f2;
+        }
+
+        .table-style tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table-style tr:hover {
+            background-color: #e9e9e9;
+        }
+
+    .edit-link,
+    .delete-link {
+        text-decoration: none;
+        padding: 5px;
+        margin-right: 5px;
+        color: #007bff;
+    }
+
+    .delete-link {
+        color: #dc3545;
+    }
+</style>
+
+<h1>Employee Page</h1>
+
+@if (Model.EmployeesDTOs?.Success is true)
+{
+    <table class="table-style">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Full title</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model.EmployeesDTOs.Result)
+            {
+                <tr>
+                    <td>@employee.ID</td>
+                    <td>@employee.FullName</td>
+                    <td>@employee.Email</td>
+                    <td>@employee.Mobile</td>
+                    <td>
+                        <a href="#" class="edit-link">Update</a>
+                        <a href="#" class="delete-link">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No employees found.</p>
+}

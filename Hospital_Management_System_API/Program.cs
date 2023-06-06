@@ -50,8 +50,6 @@ try
             options => options.MigrationsAssembly("Hospital_Management_System_MIG"));
     });
 
-    builder.Services.IdentityConfigurations();
-
     builder.Services.SetUriConfigurations();
 
     builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));

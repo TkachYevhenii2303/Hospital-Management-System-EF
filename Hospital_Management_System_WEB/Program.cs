@@ -1,13 +1,11 @@
-using Hospital_Management_System_BLL.Services.Interfaces;
 using Hospital_Management_System_BLL.Services;
-using Hospital_Management_System_DAL.Context;
+using Hospital_Management_System_BLL.Services.Interfaces;
 using Hospital_Management_System_DAL.Generic_Repository_Pattern.Interfaces;
 using Hospital_Management_System_DAL.Generic_Repository_Pattern;
 using Hospital_Management_System_DAL.Unit_of_Work_Pattern.Interfaces;
 using Hospital_Management_System_DAL.Unit_of_Work_Pattern;
+using Hospital_Management_System_DAL.Context;
 using Microsoft.EntityFrameworkCore;
-using Hospital_Management_System_DAL.Pagination.Configurations;
-using Hospital_Management_System_API.CustomMiddlewares;
 
 namespace Hospital_Management_System_WEB
 {
@@ -19,13 +17,12 @@ namespace Hospital_Management_System_WEB
 
             builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
+            builder.Services.AddRazorPages();
+
             builder.Services.AddDbContext<HospitalContext>(configurations =>
             {
-                configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-                    options => options.MigrationsAssembly("Hospital_Management_System_MIG"));
+                configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
-
-            builder.Services.SetUriConfigurations();
 
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
@@ -33,21 +30,17 @@ namespace Hospital_Management_System_WEB
 
             builder.Services.AddScoped<IEmployeesServices, EmployeesServices>();
 
-            builder.Services.AddRazorPages();
-
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
-
+            
                 app.UseHsts();
             }
 
-            app.ConfigureExceptionHandler();
-
             app.UseHttpsRedirection();
-            
+
             app.UseStaticFiles();
 
             app.UseRouting();

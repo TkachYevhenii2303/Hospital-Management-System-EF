@@ -9,17 +9,11 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Hospital_Management_System_BLL\Hospital_Management_System_BLL.csproj" />
-    <ProjectReference Include="..\Hospital_Management_System_DAL\Hospital_Management_System_DAL.csproj" />
     <ProjectReference Include="..\Hospital_Management_System_DTO\Hospital_Management_System_DTO.csproj" />
   </ItemGroup>
 

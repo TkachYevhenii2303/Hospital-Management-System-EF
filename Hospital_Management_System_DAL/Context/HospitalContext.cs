@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Context
 {
-    public class HospitalContext : IdentityDbContext<User>
+    public class HospitalContext : DbContext
     {
-        public HospitalContext(DbContextOptions options) : base(options) { }
+        public HospitalContext(DbContextOptions<HospitalContext> options) : base(options) { }
 
         public DbSet<Employees> Employees { get; set; }
 
@@ -45,37 +45,35 @@ namespace Hospital_Management_System_DAL.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-          /*  var Seeding = new BogusSeeding();
+            var Seeding = new BogusSeeding();
 
             modelBuilder.Entity<Employees>().HasData(Seeding.Employees);
 
             modelBuilder.Entity<Roles>().HasData(Seeding.Roles);
 
             modelBuilder.Entity<HasRoles>().HasData(Seeding.HasRoles);
-            
+
             modelBuilder.Entity<Hospitals>().HasData(Seeding.Hospitals);
-            
+
             modelBuilder.Entity<InDepartments>().HasData(Seeding.InDepartments);
-            
+
             modelBuilder.Entity<Departments>().HasData(Seeding.Departments);
-            
+
             modelBuilder.Entity<Shedules>().HasData(Seeding.Shedules);
 
             modelBuilder.Entity<Patients>().HasData(Seeding.Patients);
-            
+
             modelBuilder.Entity<PatientsCases>().HasData(Seeding.PatientsCases);
 
             modelBuilder.Entity<AppointmentsStatuses>().HasData(Seeding.AppointmentsStatuses);
-            
+
             modelBuilder.Entity<Appointments>().HasData(Seeding.Appointments);
 
             modelBuilder.Entity<DocumentsTypes>().HasData(Seeding.DocumentsTypes);
 
-            modelBuilder.Entity<Documents>().HasData(Seeding.Documents);*/
+            modelBuilder.Entity<Documents>().HasData(Seeding.Documents);
         }
     }
 }
