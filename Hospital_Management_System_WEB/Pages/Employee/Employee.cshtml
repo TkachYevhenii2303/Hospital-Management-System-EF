@@ -48,7 +48,7 @@
     <a asp-page="Create">Insert new Employee</a>
 </p>
 
-@if (Model.EmployeesDTOs?.Success is true)
+@if (Model.EmployeesDTOs.Succeeded is true)
 {
     <table class="table-style">
         <thead>
@@ -78,6 +78,39 @@
             }
         </tbody>
     </table>
+
+    <nav>
+        <ul class="pagination">
+            @if (!string.IsNullOrEmpty(Model.EmployeesDTOs.PreviousPage?.ToString()))
+            {
+                <li class="page-item">
+                    <a class="page-link" href="?PageNumber=@(Model.EmployeesDTOs.PageNumber - 1)&PageSize=@Model.EmployeesDTOs.PageSize">Previous</a>
+                </li>
+            }
+
+            @for (int i = 1; i <= Model.EmployeesDTOs.TotalPages; i++)
+            {
+                <li class="page-item @(Model.EmployeesDTOs.PageNumber == i ? "active" : "")">
+                    <a class="page-link" href="?PageNumber=@i&PageSize=@Model.EmployeesDTOs.PageSize">@i</a>
+                </li>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.EmployeesDTOs.NextPage?.ToString()))
+            {
+                <li class="page-item">
+                    <a class="page-link" href="?PageNumber=@(Model.EmployeesDTOs.PageNumber + 1)&PageSize=@Model.EmployeesDTOs.PageSize">Next</a>
+                </li>
+            }
+        </ul>
+    </nav>
+
+    <h2>Claim details</h2>
+    <ul>
+        @foreach (var claim in User.Claims)
+        {
+            <li><strong>@claim.Type</strong>: @claim.Value</li>
+        }
+    </ul>
 }
 else
 {

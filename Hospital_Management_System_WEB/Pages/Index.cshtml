@@ -1,7 +1,46 @@
 ﻿@page
-@model IndexModel
+@model Hospital_Management_System_WEB.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home Page";
 }
 
+<style>
+    #hero {
+	max-width: 1600px;
+	width: 100%;
+	height: 80vh;
+	background: url("/Images/emma-simpson-mNGaaLeWEp0-unsplash.jpg") center center;
+	background-size: cover;
+	position: relative;
+}
+
+#hero .container {
+	padding-top: 80px;
+}
+
+#hero:before {
+	content: "";
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#hero h1 {
+	margin: 0 0 10px 0;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 56px;
+	color: #fff;
+	align-items: center;
+}
+</style>
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+        <h1>Hospital Management System Good Health</h1>
+    </div>
+</section>
 

@@ -13,6 +13,8 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Json;
 using System.Reflection;
+using Hospital_Management_System_DAL.Entities;
+using Microsoft.AspNetCore.Identity;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console().WriteTo.File("logs.txt").CreateLogger();
@@ -50,6 +52,18 @@ try
             options => options.MigrationsAssembly("Hospital_Management_System_MIG"));
     });
 
+    builder.Services.AddIdentity<User, IdentityRole>(options =>
+    {
+        options.Password.RequiredLength = 5;
+        options.Password.RequireDigit = false;
+        options.Password.RequireUppercase = false;
+
+        options.User.RequireUniqueEmail = true;
+
+    }).AddEntityFrameworkStores<HospitalManagementContext>();
+
+    builder.Services.AddControllersWithViews();
+
     builder.Services.SetUriConfigurations();
 
     builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
@@ -72,6 +86,8 @@ try
     app.ConfigureExceptionHandler();
 
     app.UseHttpsRedirection();
+
+    app.UseAuthentication();
 
     app.UseAuthorization();
 

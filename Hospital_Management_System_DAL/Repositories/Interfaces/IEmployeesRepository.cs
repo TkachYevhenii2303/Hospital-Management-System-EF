@@ -15,6 +15,6 @@ namespace Hospital_Management_System_DAL.Repositories.Interfaces
 {
     public interface IEmployeesRepository : IGenericRepository<Employees>
     {
-        Task<PagedResponse<IEnumerable<Employees>>> GetAllEmployeeUsingPaginationAsync([FromQuery] PaginationFiltering filter, IUriService uriService, string route);  
+        Task<PagedResponse<IEnumerable<Employees>>> GetAllEmployeeUsingPaginationAsync([FromQuery] PaginationFiltering filter, IUriService uriService, string route);
     }
 }

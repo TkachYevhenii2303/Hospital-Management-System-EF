@@ -11,9 +11,10 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System_DAL.Context
 {
-    public class HospitalManagementContext : DbContext
+    public class HospitalManagementContext : IdentityDbContext<User>
     {
-        public HospitalManagementContext(DbContextOptions<HospitalManagementContext> options) : base(options) { }
+        public HospitalManagementContext(DbContextOptions options) 
+            : base(options) { }
 
         public DbSet<Employees> Employees { get; set; }
         public DbSet<Positions> Positions { get; set; }
@@ -32,6 +33,8 @@ namespace Hospital_Management_System_DAL.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
             var seeding = new BogusSeeding();

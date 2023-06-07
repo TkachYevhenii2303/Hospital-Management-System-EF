@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Hospital_Management_System_DAL.Entities;
 using Hospital_Management_System_DAL.Pagination;
+using Hospital_Management_System_DAL.RegistrationModels;
 using Hospital_Management_System_DAL.Wrapper_Response;
 using Hospital_Management_System_DTO.Data_transfer_objects.Result_Request_DTO;
 
@@ -15,6 +16,8 @@ namespace Hospital_Management_System_API.AutoMapper
             ResultResponseConfigurationsMapping();
 
             PagedResponseConfigurationsMapping();
+
+            UserRegistrationConfigurationMapping();
         }
 
         private void EmployeesConfigurationsMapping()
@@ -37,6 +40,12 @@ namespace Hospital_Management_System_API.AutoMapper
         private void PagedResponseConfigurationsMapping()
         {
             CreateMap(typeof(PagedResponse<>), typeof(PagedResponse<>));
+        }
+
+        private void UserRegistrationConfigurationMapping()
+        {
+            CreateMap<UserRegistrationModel, User>()
+                .ForMember(u => u.UserName, opt => opt.MapFrom(x => x.Email));
         }
     }
 }
